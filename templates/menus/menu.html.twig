@@ -1,0 +1,14 @@
+<header >
+    <div class="logo">
+        Mon Super Site
+    </div>
+    <nav>
+        <ul>
+            <a href="{{ path('blog_show_all_articles') }}"><li>Blog</li></a>
+            <a href="{{ path('blog_show_single_article', {'id': 'Roman'}) }}"><li>Article Seul</li></a>
+            <a href="{{ path('blog_create_article', {'id': 'Roman'}) }}"><li>Créer un Article</li></a>
+            <a href="{{ path('blog_edit_article', {'id': 'Roman'}) }}"><li>Modifier Article</li></a>
+            <a href="{{ path('blog_delete_article', {'id': 'Roman'}) }}"><li>Supprimer un Article</li></a>
+        </ul>
+    </nav>
+</header>

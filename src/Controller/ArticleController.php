@@ -11,93 +11,48 @@ class ArticleController extends AbstractController
 {
 
     /**
-     * @param Request $request
-     * @Route("/blog", name="blog_show_all_articles")
      * @return Response
+     * @Route("/blog/all", name="blog_show_all_articles")
      */
-    public function showAllArticles(Request $request){
-        $response = new Response() ;
-
-        $content = "<html><body>Liste de tous les Articles</body></html></body>";
-
-        $response->setContent($content);
-        $response->setStatusCode(200);
-
-        return $response;
-
+    public function showAllArticles(){
+        return $this->render('blog/articles/all.html.twig');
     }
 
 
     /**
-     * @param Request $request
      * @return Response
      * @Route("/blog/article/new", name="blog_create_article")
      */
-    public function createArticle(Request $request){
-        $response = new Response() ;
-
-        $content = "<html><body>Création d'un nouvel article !</body></html></body>";
-
-        $response->setContent($content);
-        $response->setStatusCode(200);
-
-        return $response;
-
+    public function createArticle(){
+        return $this->render('blog/articles/create.html.twig');
     }
 
     /**
      * @param $id
-     * @param Request $request
      * @Route("blog/article/edit/{id}", name="blog_edit_article")
      * @return Response
      */
-    public function editArticle($id, Request $request){
-        $response = new Response() ;
-
-        $content = "<html><body>Article en édition : $id</body></html></body>";
-
-        $response->setContent($content);
-        $response->setStatusCode(200);
-
-        return $response;
-
+    public function editArticle($id){
+        return $this->render('blog/articles/update.html.twig', ['id' => $id]);
     }
 
     /**
      * @param $id
-     * @param Request $request
      * @return Response
      * @Route("blog/article/delete/{id}", name="blog_delete_article")
      */
-    public function deleteArticle($id, Request $request){
-        $response = new Response() ;
-
-        $content = "<html><body>Supression de l'article numéro $id !</body></html></body>";
-
-        $response->setContent($content);
-        $response->setStatusCode(200);
-
-        return $response;
-
+    public function deleteArticle($id){
+        return $this->render('blog/articles/delete.html.twig', ['id' => $id]);
     }
 
 
     /**
      * @param $id
-     * @param Request $request
      * @Route("blog/article/{id}", name="blog_show_single_article")
      * @return Response
      */
-    public function showOneById($id, Request $request){
-        $response = new Response() ;
-
-        $content = "<html><body>Article lu : $id</body></html></body>";
-
-        $response->setContent($content);
-        $response->setStatusCode(200);
-
-        return $response;
-
+    public function showOneById($id){
+        return $this->render('blog/articles/one.html.twig', ['id' => $id]);
     }
 
 

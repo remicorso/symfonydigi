@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b98c3934-2867-48e1-a0c9-968869a7ff2e" name="Default Changelist" comment="" />
+    <list default="true" id="b98c3934-2867-48e1-a0c9-968869a7ff2e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/blog/articles/all.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/blog/articles/create.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/blog/articles/delete.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/blog/articles/one.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/blog/articles/update.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/blog/authors/all.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/blog/authors/create.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/blog/authors/delete.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/blog/authors/one.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/blog/authors/update.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/menus/footer.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/menus/menu.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AuthorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AuthorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/author/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +34,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -124,7 +149,11 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1UZG4pOj6J6u6MQuaN2ejhnqwQQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -133,7 +162,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\tpsymfo\templates\blog" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
@@ -166,7 +200,9 @@
       <workItem from="1575556916262" duration="243000" />
       <workItem from="1575557170228" duration="5551000" />
       <workItem from="1575563526535" duration="89000" />
-      <workItem from="1575622598897" duration="17727000" />
+      <workItem from="1575622598897" duration="18623000" />
+      <workItem from="1575880817564" duration="11566000" />
+      <workItem from="1575907990621" duration="1233000" />
     </task>
     <servers />
   </component>
@@ -182,18 +218,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575644873802" />
+    <state x="1052" y="232" key="FileChooserDialogImpl" timestamp="1575888883573">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1052" y="232" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1575888883573" />
     <state x="794" y="435" width="356" height="169" key="Github.CreateGistDialog" timestamp="1575648652886">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="435" width="356" height="169" key="Github.CreateGistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575648652886" />
-    <state x="773" y="120" key="SettingsEditor" timestamp="1575557589990">
+    <state x="773" y="120" key="SettingsEditor" timestamp="1575888886637">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="773" y="120" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1575557589990" />
-    <state x="661" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1575622599514">
+    <state x="773" y="120" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1575888886637" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1575909327717">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="661" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575622599514" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1575909327717" />
+    <state x="661" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1575907992612">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="661" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575907992612" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1575641205546">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

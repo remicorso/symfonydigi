@@ -10,56 +10,50 @@ use Symfony\Component\Routing\Annotation\Route;
 class AuthorController extends AbstractController
 {
     /**
-     * @param Request $request
      * @Route("blog/author/all", name="author_show_all")
      * @return Response
      */
-    public function showAllAuthors(Request $request){
-        return new Response("Liste de tous les auteurs", 200);
-
+    public function showAllAuthors(){
+        return $this->render('blog/authors/all.html.twig');
     }
 
 
     /**
-     * @param Request $request
      * @return Response
      * @Route("blog/author/new", name="author_create")
      */
-    public function createAuthor(Request $request)
+    public function createAuthor()
     {
-        return new Response("Création d'un nouvel auteur !", 200);
+        return $this->render('blog/authors/create.html.twig');
     }
 
     /**
      * @param $id
-     * @param Request $request
      * @Route("blog/author/edit/{id}", name="author_edit")
      * @return Response
      */
-    public function editAuthor($id, Request $request)
+    public function editAuthor($id)
     {
-        return new Response("Edition de l'auteur : $id", 200);
+        return $this->render('blog/authors/update.html.twig', ['id'=>$id]);
     }
 
     /**
      * @param $id
-     * @param Request $request
      * @return Response
      * @Route("blog/author/delete/{id}", name="author_delete")
      */
-    public function deleteAuthor($id, Request $request)
+    public function deleteAuthor($id)
     {
-        return new Response("Suppression de l'auteur $id");
+        return $this->render('blog/authors/delete.html.twig', ['id'=>$id]);
     }
 
 
     /**
      * @param $id
-     * @param Request $request
      * @Route("blog/author/show/{id}", name="author_show_single")
      * @return Response
      */
-    public function showOneAuthorById($id, Request $request){
-       return new Response("Profil de l'auteur : $id", 200);
+    public function showOneAuthorById($id){
+        return $this->render('blog/authors/one.html.twig', ['id'=>$id]);
     }
 }
