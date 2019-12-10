@@ -3,5 +3,17 @@
 {% block title %}Tous les Articles{% endblock %}
 
 {% block content %}
-Je suis dans ma page de tous les Articles !
+
+    <h1>Vous vous trouvez sur la page d'accueil du Blog</h1>
+    <div class="myRow">
+    {%  for article in articles %}
+        <div class="singleArticle">
+        <h3>{{ article.title }}</h3>
+            <h4>Rédigé le {{ article.date | date("d/m/y à h:i") }}</h4>
+            <p>{{ article.content| striptags | slice(0, 200) }} ...</p>
+        <a class="btn" href="{{ path('blog_show_single_article', {'id': article.id}) }}">Voir l'article</a>
+        </div>
+    {% endfor %}
+    </div>
+
 {% endblock %}

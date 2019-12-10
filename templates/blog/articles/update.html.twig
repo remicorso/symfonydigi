@@ -1,7 +1,8 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Édition de l'article : {{ id }}{% endblock %}
+{% block title %}Édition de l'article : {{ article.title | capitalize }}{% endblock %}
 
 {% block content %}
-    Je suis dans ma page d'édition de l'article : {{ id }}
+    <h1>Vous êtes sur le point de modifier l'article "{{ article.title | capitalize }}"</h1>
+
 {% endblock %}

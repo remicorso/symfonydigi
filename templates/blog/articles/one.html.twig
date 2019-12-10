@@ -1,7 +1,18 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Page de l'article : {{ id }}{% endblock %}
+{% block title %}Page de l'article : {{ article.title }}{% endblock %}
 
 {% block content %}
-    Je suis dans ma page de l'article : {{ id }} !
+
+        <h1>Vous consultez actuellement un Article</h1>
+
+        <h2>{{ article.title | capitalize }}</h2>
+        <h4>Rédigé le {{ article.date | date("d/m/y à h:i") }}</h4>
+        <div class="content">Content : {{ article.content }}</div>
+
+        <div class="buttonsRow">
+                <a class="btn btn-update" href="{{ path('blog_edit_article', {'id': article.id}) }}">Modifier</a>
+                <a class="btn btn-delete" href="{{ path('blog_delete_article', {'id': article.id}) }}">Supprimer</a>
+        </div>
+
 {% endblock %}

@@ -4,12 +4,14 @@
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}
+            <script src="https://kit.fontawesome.com/8c3f33f870.js" crossorigin="anonymous"></script>
         <style>
             body{
                 margin: 0;
                 min-height: 100vh;
                 display: grid;
                 grid-template-rows: max-content 1fr;
+                font-family: Arial, Helvetica, sans-serif;
             }
             header{
                 display: flex;
@@ -21,6 +23,8 @@
                 flex-direction: column;
                 justify-content: center;
                 color: #e7e7e7;
+                text-align: center;
+
             }
             header ul{
             display: flex;
@@ -41,6 +45,8 @@
                 }
             header ul li:hover{
                 background-color: #C9C7D1;
+                box-shadow: 0 0 5px #e7e7e7;
+                transition-duration: 500ms;
             }
             header a{
                 color: #2b2b2b;
@@ -49,7 +55,7 @@
             main{
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                justify-content: start;
                 text-align: center;
             }
             footer{
@@ -76,6 +82,76 @@
             footer a{
                 color: #e7e7e7;
                 text-decoration: none;
+            }
+            .content{
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 20px;
+            }
+            .btn{
+                background-color: #e7e7e7;
+                color: #2b2b2b;
+                padding: 10px;
+                text-decoration: none;
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .btn:hover{
+                background-color: #fff;
+                box-shadow: #e7e7e7;
+                transition-duration: 500ms;
+            }
+            .myRow{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 100%;
+                justify-content: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .singleArticle{
+                width: 32%;
+                background-color: #2b2b2b;
+                color: #e7e7e7;
+                margin-left: 5px;
+                margin-right: 5px;
+                padding-bottom: 20px;
+                margin-bottom: 5px;
+                min-height: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .singleArticle p{
+                padding: 15px;
+            }
+            .btn-update{
+                background-color: #0088CC;
+                color: #fff;
+            }
+            .btn-update:hover{
+                background-color: #5eb5e0;
+                transition-duration: 500ms;
+            }
+            .btn-delete{
+                background-color: #AA3333;
+                color: #fff;
+            }
+            .btn-delete:hover{
+                background-color: #C82829;
+                transition-duration: 500ms;
+            }
+            .buttonsRow{
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                margin-left: auto;
+                margin-right: auto;
             }
         </style>
         {% endblock %}

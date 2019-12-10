@@ -1,14 +1,11 @@
 <header >
-    <div class="logo">
-        Mon Super Site
-    </div>
+    <a class="logo" href="{{ path('blog_show_all_articles') }}">
+        <i class="fas fa-user-ninja fa-2x"></i> Mon Super Site
+        </a>
     <nav>
         <ul>
-            <a href="{{ path('blog_show_all_articles') }}"><li>Blog</li></a>
-            <a href="{{ path('blog_show_single_article', {'id': 'Roman'}) }}"><li>Article Seul</li></a>
-            <a href="{{ path('blog_create_article', {'id': 'Roman'}) }}"><li>Créer un Article</li></a>
-            <a href="{{ path('blog_edit_article', {'id': 'Roman'}) }}"><li>Modifier Article</li></a>
-            <a href="{{ path('blog_delete_article', {'id': 'Roman'}) }}"><li>Supprimer un Article</li></a>
+            <a href="{{ path('blog_show_all_articles') }}"><li><i class="fas fa-th-large"></i> Blog</li></a>
+            <a href="{{ path('blog_create_article') }}"><li><i class="fas fa-plus"></i> Créer un Article</li></a>
         </ul>
     </nav>
 </header>
