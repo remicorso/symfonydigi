@@ -5,4 +5,28 @@
 {% block content %}
     <h1>Vous êtes sur le point de modifier l'article "{{ article.title | capitalize }}"</h1>
 
+    {{ form_start(articleForm) }}
+
+
+    <h5><i class="fa fa-calendar"></i> {{ form_label(articleForm.title) }}</h5>
+    {{ form_widget(articleForm.title) }}
+
+    <small>{{ form_help(articleForm.title) }}</small>
+
+    <h5><i class="fa fa-user"></i> {{ form_label(articleForm.auteur) }}</h5>
+    {{ form_widget(articleForm.auteur) }}
+
+    <small>{{ form_help(articleForm.auteur) }}</small>
+
+    <h5><i class="fa fa-calendar"></i> {{ form_label(articleForm.content) }}</h5>
+    {{ form_widget(articleForm.content) }}
+
+    <small>{{ form_help(articleForm.content) }}</small>
+
+    <div class="formButton">
+        {{ form_widget(articleForm.valider) }}
+    </div>
+
+    {{ form_end(articleForm) }}
+
 {% endblock %}

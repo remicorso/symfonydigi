@@ -1,7 +1,28 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Édition de l'auteur : {{ id }}{% endblock %}
+{% block title %}Édition de l'auteur : {{ auteur.firstname | capitalize }}{% endblock %}
 
 {% block content %}
-    Je suis dans ma page d'édition de l'auteur : {{ id }}
+
+    <h1>Vous êtes en train de modifier l'auteur "{{ auteur.firstname | capitalize }}"</h1>
+
+    {{ form_start(auteurForm) }}
+
+
+    <h5><i class="fa fa-calendar"></i> {{ form_label(auteurForm.firstname) }}</h5>
+    {{ form_widget(auteurForm.firstname) }}
+
+    <small>{{ form_help(auteurForm.firstname) }}</small>
+
+    <h5><i class="fa fa-calendar"></i> {{ form_label(auteurForm.lastname) }}</h5>
+    {{ form_widget(auteurForm.lastname) }}
+
+    <small>{{ form_help(auteurForm.lastname) }}</small>
+
+    <div class="formButton">
+        {{ form_widget(auteurForm.valider) }}
+    </div>
+
+    {{ form_end(auteurForm) }}
+
 {% endblock %}

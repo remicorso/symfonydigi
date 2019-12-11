@@ -4,6 +4,7 @@ namespace App\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Class Auteur
@@ -23,12 +24,14 @@ class Auteur
     /**
      * @var string
      * @ORM\Column(name="firstname", type="string", length=100, nullable=false)
+     * @Assert\Length(min="2", max="30")
      */
     private $firstname;
 
     /**
      * @var string
      * @ORM\Column(name="lastname", type="string", nullable=false)
+     * @Assert\Length(min="2", max="50")
      */
     private $lastname;
 
@@ -38,21 +41,34 @@ class Auteur
      */
     private $articles;
 
+    /**
+     * Auteur constructor.
+     */
     public function __construct()
     {
         $this->articles = new ArrayCollection();
     }
 
+    /**
+     * @return int|null
+     */
     public function getId(): ?int
     {
         return $this->id;
     }
 
+    /**
+     * @return string|null
+     */
     public function getFirstname(): ?string
     {
         return $this->firstname;
     }
 
+    /**
+     * @param string $firstname
+     * @return $this
+     */
     public function setFirstname(string $firstname): self
     {
         $this->firstname = $firstname;
@@ -60,11 +76,18 @@ class Auteur
         return $this;
     }
 
+    /**
+     * @return string|null
+     */
     public function getLastname(): ?string
     {
         return $this->lastname;
     }
 
+    /**
+     * @param string $lastname
+     * @return $this
+     */
     public function setLastname(string $lastname): self
     {
         $this->lastname = $lastname;
@@ -80,6 +103,10 @@ class Auteur
         return $this->articles;
     }
 
+    /**
+     * @param Article $article
+     * @return $this
+     */
     public function addArticle(Article $article): self
     {
         if (!$this->articles->contains($article)) {
@@ -90,6 +117,10 @@ class Auteur
         return $this;
     }
 
+    /**
+     * @param Article $article
+     * @return $this
+     */
     public function removeArticle(Article $article): self
     {
         if ($this->articles->contains($article)) {

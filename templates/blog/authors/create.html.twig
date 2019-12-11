@@ -1,7 +1,28 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Création d'un auteur{% endblock %}
+{% block title %}Création d'un Auteur{% endblock %}
 
 {% block content %}
-    Je suis dans ma page de création d'un auteur !
+
+    <h1>Vous allez créer un nouvel Auteur</h1>
+
+    {{ form_start(auteurForm) }}
+
+
+    <h5><i class="fa fa-calendar"></i> {{ form_label(auteurForm.firstname) }}</h5>
+    {{ form_widget(auteurForm.firstname) }}
+
+    <small>{{ form_help(auteurForm.firstname) }}</small>
+
+    <h5><i class="fa fa-calendar"></i> {{ form_label(auteurForm.lastname) }}</h5>
+    {{ form_widget(auteurForm.lastname) }}
+
+    <small>{{ form_help(auteurForm.lastname) }}</small>
+
+    <div class="formButton">
+    {{ form_widget(auteurForm.valider) }}
+    </div>
+
+    {{ form_end(auteurForm) }}
+
 {% endblock %}

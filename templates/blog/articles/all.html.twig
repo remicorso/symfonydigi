@@ -9,7 +9,7 @@
     {%  for article in articles %}
         <div class="singleArticle">
         <h3>{{ article.title }}</h3>
-            <h4>Rédigé le {{ article.date | date("d/m/y à h:i") }}</h4>
+            <h4>Rédigé le {{ article.date | date("d/m/y à H:i") }}</h4>
             <p>{{ article.content| striptags | slice(0, 200) }} ...</p>
         <a class="btn" href="{{ path('blog_show_single_article', {'id': article.id}) }}">Voir l'article</a>
         </div>

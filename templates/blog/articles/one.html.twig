@@ -7,7 +7,7 @@
         <h1>Vous consultez actuellement un Article</h1>
 
         <h2>{{ article.title | capitalize }}</h2>
-        <h4>Rédigé le {{ article.date | date("d/m/y à h:i") }}</h4>
+        <h4>Rédigé par {{ article.auteur.firstname }}, le {{ article.date | date("d/m/y à h:i") }}</h4>
         <div class="content">Content : {{ article.content }}</div>
 
         <div class="buttonsRow">
