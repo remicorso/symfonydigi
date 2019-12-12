@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b98c3934-2867-48e1-a0c9-968869a7ff2e" name="Default Changelist" comment="" />
+    <list default="true" id="b98c3934-2867-48e1-a0c9-968869a7ff2e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tests/CRUD/Blog/ArticleCRUDTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -186,6 +190,7 @@
       <workItem from="1576056120664" duration="20322000" />
       <workItem from="1576139916294" duration="3520000" />
       <workItem from="1576143970199" duration="7751000" />
+      <workItem from="1576157155522" duration="5299000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout d'entité, graphisme de test">
       <created>1575909368305</created>
@@ -215,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576157114468</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Ajout de fonctionnalités">
+      <created>1576157314781</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1576157314781</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,6 +239,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Ajout de fonctionnalités" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="640" y="247" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576165440087">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="247" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576165440087" />
     <state x="648" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1575563281474">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -235,10 +251,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576074161572" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1576157262124">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1576157314062">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576157262124" />
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576157314062" />
     <state x="1052" y="232" key="FileChooserDialogImpl" timestamp="1576143788840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -251,10 +267,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="773" y="120" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1575888886637" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1576157119045">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1576157322508">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1576157119045" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1576157322508" />
     <state x="661" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1576157157532">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
