@@ -6,6 +6,12 @@
         <ul>
             <a href="{{ path('blog_show_all_articles') }}"><li><i class="fas fa-th-large"></i> Blog</li></a>
             <a href="{{ path('blog_create_article') }}"><li><i class="fas fa-plus"></i> Créer un Article</li></a>
+            {% if app.user %}
+                <a href="{{ path('app_logout') }}"><li><i class="fas fa-sign-out-alt"></i> Déconnexion</li></a>
+
+                {% else %}
+                    <a href="{{ path('app_login') }}"><li><i class="fas fa-sign-in-alt"></i> Connexion</li></a>
+            {% endif %}
         </ul>
     </nav>
 </header>

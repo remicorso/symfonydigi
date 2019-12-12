@@ -13,6 +13,7 @@
                 grid-template-rows: max-content 1fr;
                 font-family: Arial, Helvetica, sans-serif;
             }
+
             header{
                 display: flex;
                 justify-content: space-around;
@@ -100,6 +101,7 @@
                 width: 50%;
                 margin-left: auto;
                 margin-right: auto;
+                cursor: pointer;
             }
             .btn:hover{
                 background-color: #fff;
@@ -131,9 +133,20 @@
             .singleArticle p{
                 padding: 15px;
             }
+            .btn-black{
+                background-color: #2b2b2b;
+                color: #fff;
+                cursor: pointer;
+                border: none;
+            }
+            .btn-black:hover{
+                background-color: #333333;
+                transition-duration: 500ms;
+            }
             .btn-update{
                 background-color: #0088CC;
                 color: #fff;
+                cursor: pointer;
             }
             .btn-update:hover{
                 background-color: #5eb5e0;
@@ -142,6 +155,7 @@
             .btn-delete{
                 background-color: #AA3333;
                 color: #fff;
+                cursor: pointer;
             }
             .btn-delete:hover{
                 background-color: #C82829;
@@ -166,6 +180,57 @@
                 border: none;
                 margin-top: 10px;
                 min-width: 300px;
+                cursor: pointer;
+            }
+
+            .loginForm{
+                width: 25%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .loginForm label, .loginForm input{
+                margin-bottom: 1em;
+            }
+
+            .loginForm .checkbox label {
+                display: flex;
+                justify-content: center;
+            }
+
+            .loginForm .checkbox label input {
+                min-width: auto;
+                margin-bottom: 0;
+            }
+
+            .globalLogin {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+
+            hr{
+                margin-top: 50px;
+                margin-bottom: 50px;
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid #2b2b2b;
+            }
+
+            .remember {
+                display: flex;
+                justify-content: center;
+            }
+
+            .remember input {
+                min-width: auto;
+                margin-bottom: 0;
+                margin-top: 0;
+            }
+
+            .remember label {
+                margin-bottom: 0;
             }
 
             input, select, textarea {

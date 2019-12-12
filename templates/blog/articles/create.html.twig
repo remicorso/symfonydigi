@@ -20,8 +20,9 @@
     <small>{{ form_help(articleForm.auteur) }}</small>
 
     <h5><i class="fa fa-calendar"></i> {{ form_label(articleForm.content) }}</h5>
-    {{ form_widget(articleForm.content) }}
-
+    <div class="scroller">
+    {{ form_widget(articleForm.content,{ 'attr': {'rows': '20'} }) }}
+    </div>
     <small>{{ form_help(articleForm.content) }}</small>
 
     <div class="formButton">

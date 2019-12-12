@@ -19,7 +19,9 @@ class ArticleFormType extends AbstractType
     {
         $builder
             ->add('title', TextType::class)
-            ->add('content', TextareaType::class)
+            ->add('content', TextareaType::class, [
+                'attr' => ['rows' => '15']
+            ])
             ->add('auteur', EntityType::class, [
                 'class'=>Auteur::class,
                 'choice_label'=> function($auteur){
