@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b98c3934-2867-48e1-a0c9-968869a7ff2e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/Blog/ArticleFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/Blog/ArticleFormType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/articles/create.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/articles/create.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/menus/footer.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menus/footer.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/menus/menu.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menus/menu.html.twig" afterDir="false" />
-    </list>
+    <list default="true" id="b98c3934-2867-48e1-a0c9-968869a7ff2e" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -193,7 +185,7 @@
       <workItem from="1576053505439" duration="1792000" />
       <workItem from="1576056120664" duration="20322000" />
       <workItem from="1576139916294" duration="3520000" />
-      <workItem from="1576143970199" duration="7683000" />
+      <workItem from="1576143970199" duration="7751000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout d'entité, graphisme de test">
       <created>1575909368305</created>
@@ -216,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576082094820</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Ajout de fonctionnalités">
+      <created>1576157114468</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576157114468</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,10 +235,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576074161572" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1576082094133">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1576157262124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576082094133" />
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576157262124" />
     <state x="1052" y="232" key="FileChooserDialogImpl" timestamp="1576143788840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -252,18 +251,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="773" y="120" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1575888886637" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1576082097806">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1576157119045">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1576082097806" />
-    <state x="661" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1576139949294">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1576157119045" />
+    <state x="661" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1576157157532">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="661" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576139949294" />
-    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575983314960">
+    <state x="661" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576157157532" />
+    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576157224032">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1575983314960" />
+    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1576157224032" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1575641205546">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

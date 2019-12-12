@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Register{% endblock %}
+
+{% block content %}
+    <h1>Register</h1>
+
+<div class="globalLogin">
+    <div class="loginForm">
+
+    {{ form_start(registrationForm) }}
+        {{ form_label(registrationForm.email) }}
+        {{ form_widget(registrationForm.email) }}
+        {{ form_row(registrationForm.plainPassword) }}
+        <h6 class="remember">
+            {{ form_widget(registrationForm.agreeTerms) }}
+            {{ form_label(registrationForm.agreeTerms) }}
+        </h6>
+
+
+
+        <button class="btn btn-black">Create my Account</button>
+    {{ form_end(registrationForm) }}
+        <hr>
+        <h3>OR</h3>
+        <a href="{{ path('app_login') }}" class="btn btn-black">
+            Back to Login
+        </a>
+{% endblock %}
