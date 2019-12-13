@@ -16,6 +16,14 @@ class ArticleController extends AbstractController
 {
 
     /**
+     * Index
+     * @Route("/", name="homepage")
+     */
+    public function index(){
+        return $this->redirectToRoute('blog_show_all_articles');
+    }
+
+    /**
      * @param ArticleCRUD $articleCRUD
      * @return Response
      * @Route("/blog/all", name="blog_show_all_articles")

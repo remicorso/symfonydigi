@@ -28,6 +28,7 @@ class ArticleCRUDTest extends WebTestCase
     }
 
     /**
+     * Test the Add Article method
      * @test
      */
     public function testAddArticleSuccessful()
@@ -48,6 +49,49 @@ class ArticleCRUDTest extends WebTestCase
         $this->assertEquals(
             $article->getTitle(),
             $articleFromDb->getTitle()
+        );
+    }
+
+    /**
+     * Test the Update Article method
+     * @test
+     */
+    public function testUpdateArticleSuccessful()
+    {
+        $auteurs = $this->auteurCRUD->getAll();
+        $auteur = $auteurs[0];
+
+        $articles = $this->articleCRUD->getAll();
+        $article = $articles[0];
+        $articleFromDb = $articles[0];
+        $article->setTitle("updated title");
+        $article->setContent("updated content");
+        $article->setDate(new \DateTime('now'));
+        $article->setAuteur($auteur);
+
+        $this->articleCRUD->update($article);
+
+        
+
+        $this->assertTrue(
+            $article->getTitle() == $articleFromDb->getTitle()
+        );
+    }
+
+    /**
+     * Test the Delete Article method
+     * @test
+     */
+    public function testDeleteArticleSuccessful()
+    {
+        $articles = $this->articleCRUD->getAll();
+        $article = $articles[0];
+
+        $this->articleCRUD->delete($article);
+      
+
+        $this->assertTrue(
+            $article->getId() == null
         );
     }
 

@@ -8,7 +8,7 @@
 
         <h2>{{ article.title | capitalize }}</h2>
         <h4>Rédigé par {{ article.auteur.firstname }}, le {{ article.date | date("d/m/y à h:i") }}</h4>
-        <div class="content">Content : {{ article.content }}</div>
+        <div class="content">{{ article.content }}</div>
 
         <div class="buttonsRow">
                 <a class="btn btn-update" href="{{ path('blog_edit_article', {'id': article.id}) }}">Modifier</a>

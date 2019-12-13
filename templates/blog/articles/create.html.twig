@@ -9,9 +9,9 @@
     {{ form_start(articleForm) }}
 
 
-    <h5><i class="fa fa-calendar"></i> {{ form_label(articleForm.title) }}</h5>
+    <h5><i class="fa fa-scroll"></i> {{ form_label(articleForm.title) }}</h5>
     {{ form_widget(articleForm.title) }}
-
+    <h6>{{ form_errors(articleForm.title) }}</h6>
     <small>{{ form_help(articleForm.title) }}</small>
 
     <h5><i class="fa fa-user"></i> {{ form_label(articleForm.auteur) }}</h5>
@@ -19,11 +19,14 @@
 
     <small>{{ form_help(articleForm.auteur) }}</small>
 
-    <h5><i class="fa fa-calendar"></i> {{ form_label(articleForm.content) }}</h5>
+    <h5><i class="fa fa-align-left"></i> {{ form_label(articleForm.content) }}</h5>
     <div class="scroller">
     {{ form_widget(articleForm.content,{ 'attr': {'rows': '20'} }) }}
     </div>
+    <h6>{{ form_errors(articleForm.content) }}</h6>
     <small>{{ form_help(articleForm.content) }}</small>
+
+    
 
     <div class="formButton">
         {{ form_widget(articleForm.valider) }}

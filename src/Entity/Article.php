@@ -21,14 +21,14 @@ class Article
 
     /**
      * @var string
-     * @Assert\Length(min="4", max="50")
+     * @Assert\Length(min="5", max="50")
      * @ORM\Column(name="title", type="string", length=100, nullable=false)
      */
     private $title;
 
     /**
      * @var string
-     * @Assert\Length(min="1", max="1000")
+     * @Assert\Length(min="20", max="1000")
      * @ORM\Column(name="content", type="text", nullable=false)
      */
     private $content;

@@ -1,9 +1,9 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Register{% endblock %}
+{% block title %}Register Page{% endblock %}
 
 {% block content %}
-    <h1>Register</h1>
+    <h1>Create your Account</h1>
 
 <div class="globalLogin">
     <div class="loginForm">
@@ -11,13 +11,19 @@
     {{ form_start(registrationForm) }}
         {{ form_label(registrationForm.email) }}
         {{ form_widget(registrationForm.email) }}
-        {{ form_row(registrationForm.plainPassword) }}
+        <h6>{{ form_errors(registrationForm.email) }}</h6>
+        {{ form_label(registrationForm.plainPassword) }}
+        {{ form_widget(registrationForm.plainPassword) }}
+        <h6>{{ form_errors(registrationForm.plainPassword) }}</h6>
+
+
         <h6 class="remember">
             {{ form_widget(registrationForm.agreeTerms) }}
             {{ form_label(registrationForm.agreeTerms) }}
+            <h6>{{ form_errors(registrationForm.agreeTerms) }}</h6>
         </h6>
 
-
+        
 
         <button class="btn btn-black">Create my Account</button>
     {{ form_end(registrationForm) }}
